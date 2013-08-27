@@ -1,0 +1,71 @@
+<?php
+/*
+Plugin Name: WP Site Verication tool
+Plugin URI: http://wordpres.org/wp-vite-verication-tool
+Description: A sinple tool that deivlers entered file content for a given URL (filename).
+Version: 1.0.0
+Author: paul Bearne
+Author URI: http://bearne.ca
+*/
+
+// -----------------------------------------------------
+// Setup some constants
+// -----------------------------------------------------
+$this_dir = dirname(__file__);
+$lib_dir = $this_dir . "/lib";
+
+
+// -----------------------------------------------------
+// Include our library files
+// -----------------------------------------------------
+if ($handle = opendir($lib_dir)) {
+	while (false !== ($file = readdir($handle))) {
+		// Don't include hidden files or directories
+		$file_path = $lib_dir . "/" . $file;
+		if (preg_match("/(lib|class)-[\w-]+\.php/", $file_path) && is_file($file_path)) { 
+			// Do Something with file
+			include_once($file_path);
+		}
+	}
+	closedir($handle);
+}
+
+
+// -----------------------------------------------------
+// Register our options menu item and options page
+// -----------------------------------------------------
+add_action("admin_menu", "wp_site_verification_tool_ui::print_plugin_menu");
+
+
+// -----------------------------------------------------
+// Activation, Deactivation, and Install routines
+// -----------------------------------------------------
+register_activation_hook(__FILE__, "wp_site_verification_tool::set_options");
+register_deactivation_hook(__FILE__, "wp_site_verification_tool::unset_options");
+add_action("admin_init", "wp_site_verification_tool::register_settings");
+
+
+
+
+/**
+ * redirect to serve cert.html to the site root with the content of "Trustwave SSL Validation Page" 
+ */
+function mec_Trustwave_valifdation_redirect() {
+	if ( false !== stripos( $_SERVER[ 'REQUEST_URI' ], 'cert.html' ) ) {
+		header( 'Content-Type: text/html' );
+		echo( "Trustwave SSL Validation Page" );
+		exit;
+	}
+}
+add_action( 'init', 'mec_Trustwave_valifdation_redirect');
+
+
+
+
+// -----------------------------------------------------
+// Closing php tag omitted
+// -----------------------------------------------------
+
+
+
+

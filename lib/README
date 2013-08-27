@@ -1,0 +1,7 @@
+Library files from this repository are meant to be used with my WordPress Plugin Template project:
+
+https://github.com/jtrussell/WordPress-Plugin-Template
+
+Checkout this repo as a submodule there:
+
+git submodule add git://github.com/jtrussell/WordPress-Plugin-Script-Library.git lib
