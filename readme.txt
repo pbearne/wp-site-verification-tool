@@ -26,3 +26,4 @@ The tool is found in tools => site Verication
 
 Version 1.0.0
 
+Thanks to Chris Ross for the code review
