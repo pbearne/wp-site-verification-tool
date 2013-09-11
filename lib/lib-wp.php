@@ -5,10 +5,11 @@
  */
 class wp_site_verification_tool
 {
-	public static $plugin_name		= "WordPress Site Verification Tool";
-	public static $option_namespace	= "wp_site_verification_tool";
-	public static $option_group		= "wp_site_verification_tool_grp";
-	public static $plugin_slug		= "wp_site_verification_tool";
+	public static $plugin_name		= "Site Verification";
+	public static $option_namespace	= "wp-site-verification-tool";
+	public static $option_group		= "wp-site-verification-tool-grp";
+	public static $plugin_slug		= "wp-site-verification-tool";
+	public static $plugin_hook 		= null;
 
 	// -----------------------------------------------------
 	// Option handling
@@ -80,16 +81,25 @@ class wp_site_verification_tool
 	// Routines to be run on activate/deactivate/install/uninstall
 	// -----------------------------------------------------
 	public static function set_options() {
-		self::add_option("my_option", "foo");
+		self::add_option("wp_site_verification_tool_on", "false");
+		self::add_option("wp_site_verification_tool_via_file", "true");
+		self::add_option("wp_site_verification_tool_file", "");
+		self::add_option("wp_site_verification_tool_contents", "");
 	}
 
 	public static function unset_options() {
-		self::delete_option("my_option");
+		self::delete_option("wp_site_verification_tool_on");
+		self::delete_option("wp_site_verification_tool_via_file");
+		self::delete_option("wp_site_verification_tool_file");
+		self::delete_option("wp_site_verification_tool_contents");
 	}
 
 	public static function register_settings() {
 		$group = self::$option_group;
-		self::register_setting("my_option", $group);
+		self::register_setting("wp_site_verification_tool_on", $group);
+		self::register_setting("wp_site_verification_tool_via_file", $group);
+		self::register_setting("wp_site_verification_tool_file", $group);
+		self::register_setting("wp_site_verification_tool_contents", $group);
 	}
 
 }

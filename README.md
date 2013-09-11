@@ -1,15 +1,18 @@
 WordPress Plugin Template
 =========================
 
-Meant to be a starting point for WordPress plugins with an emphasis on modular design.
+A sinple tool that deivlers entered file content for a given URL (filename)
+e.g. url /cert.html with the content of "Trustwave SSL Validation Page"
 
 Features
 --------
-* All files in the ./lib folder are included by the main plugin script
-* All reusable, or standardizable, code should live in ./lib
-* The stock version of this template contains a ./lib folder with a number of
-	php libaries that will be useful for many scripts, this is actually just a
-	submodule which you can add to your other plugins using
+* On Off
+* select home page head or a give filename
+* Provide the content of the file 
+
+
+notes:
+
 ~~~
 git submodule add git://github.com/jtrussell/WordPress-Plugin-Script-Library.git lib
 ~~~

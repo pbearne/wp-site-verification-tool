@@ -45,23 +45,6 @@ register_deactivation_hook(__FILE__, "wp_site_verification_tool::unset_options")
 add_action("admin_init", "wp_site_verification_tool::register_settings");
 
 
-
-
-/**
- * redirect to serve cert.html to the site root with the content of "Trustwave SSL Validation Page" 
- */
-function mec_Trustwave_valifdation_redirect() {
-	if ( false !== stripos( $_SERVER[ 'REQUEST_URI' ], 'cert.html' ) ) {
-		header( 'Content-Type: text/html' );
-		echo( "Trustwave SSL Validation Page" );
-		exit;
-	}
-}
-add_action( 'init', 'mec_Trustwave_valifdation_redirect');
-
-
-
-
 // -----------------------------------------------------
 // Closing php tag omitted
 // -----------------------------------------------------
