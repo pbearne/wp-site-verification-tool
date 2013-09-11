@@ -7,19 +7,19 @@
 			<tbody>
 				<!-- My Option -->
 				<?php
-					$option	= "my_option";
-					$label	= "My Option";
-					$title	= "title text";
-					$name 	= wp_site_verification_tool::option_name($option);
-					$id		= wp_site_verification_tool::option_name($option);
-					$value	= wp_site_verification_tool::get_option($option);
+					$option	= 'my_option';
+					$label	= 'My Option';
+					$title	= __( 'title text', 'wp_site_verification_tool' );
+					$name 	= wp_site_verification_tool::option_name( $option );
+					$id		= wp_site_verification_tool::option_name( $option );
+					$value	= wp_site_verification_tool::get_option( $option );
 				?>
 				<tr valign="top" title="<?php echo $title ?>">
 					<th>
-						<label for="<?php echo $id; ?>"><?php echo $label ?></label>
+						<label for="<?php echo esc_attr( $id ); ?>"><?php echo $label ?></label>
 					</th>
 					<td>
-						<input name="<?php echo $name; ?>" value="<?php echo $value; ?>" id="<?php echo $id ?>" type="text" class="regular-text" />
+						<input name="<?php echo esc_attr( $name ); ?>" value="<?php echo esc_attr( $value ); ?>" id="<?php echo esc_attr( $id ); ?>" type="text" class="regular-text" />
 					</td>
 				</tr><!-- End My Option -->
 
