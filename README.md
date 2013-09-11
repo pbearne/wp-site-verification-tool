@@ -7,26 +7,14 @@ e.g. url /cert.html with the content of "Trustwave SSL Validation Page"
 Features
 --------
 * On Off
-* select home page head or a give filename
-* Provide the content of the file 
+* select text to be added to head or served on the give filename
+* Provide the content of the file / head
 
 
 notes:
 
-~~~
-git submodule add git://github.com/jtrussell/WordPress-Plugin-Script-Library.git lib
-~~~
-
-* Try to avoid bloating your main plugin script with function declarations
-* Library files - or classes with all static methods - should be prefixed with "lib-"
-* Proper class files should be prefixed with "class-"
-* Other php files in the "./lib" folder will not be automatically included
-
-Getting your plugin ready
--------------------------
-Eventually there will be a configurable deploy script, but for now...
-
-* Do a global find/replace on "template_" for "your_plugin_slug_"
-* Update _deploy/readme.txt and move it to the root directory
-* Delete the _deploy folder
-* Update the static attributes at the top of lib/lib-wp.php to match your namespacing preferences
+Examples:
+Google webmaster tool needs a file called <strong>googleXXXXXXXXXXXXX.html</strong>  with no contents or 
+<strong>&lt;meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXXXXXXXX" /></strong> in the head,
+Trustwave wants a file called <strong>cert.html</strong> with the contents of 
+<strong>"Trustwave SSL Validation Page"</strong> ',"wp_site_verification_tool"
