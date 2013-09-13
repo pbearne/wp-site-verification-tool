@@ -4,7 +4,7 @@ Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MZTZ5
 Tags: Site Verication, tool, VIP, webmaster, certication
 Requires at least: 3.6
 Tested up to: 3.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 
 Site Verication Tool via file or head tag.
@@ -27,6 +27,13 @@ Trustwave wants a file called <strong>cert.html</strong> with the contents of
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. The tool is found in tools => Site Verication
 
+== Frequently Asked Questions ==
+
+= can add any thing to a ramdon URL =
+
+Yes so be careful
+
+
 == Screenshots ==
 
 1. Control pannel set for a file
@@ -35,6 +42,9 @@ Trustwave wants a file called <strong>cert.html</strong> with the contents of
 1. An example of a head meta tag
 
 == Change Log ==
+
+= 1.0.1 =
+sorting out assests
 
 = 1.0.0 =
 First version
