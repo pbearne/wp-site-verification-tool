@@ -4,7 +4,9 @@
 
 # main config
 PLUGINSLUG="wp-site-verification-tool"
-CURRENTDIR='./'
+CURRENTDIR="./"
+#`pwd`
+echo $CURRENTDIR
 MAINFILE="wp-site-verification-tool.php" # this should be the name of your main php file in the wordpress plugin
 
 # git config
@@ -25,7 +27,7 @@ echo ".........................................."
 echo 
 
 # Check version in readme.txt is the same as plugin file
-NEWVERSION1=`grep "^Stable tag" $GITPATH/readme.txt | awk -F' ' '{print $3}'`
+NEWVERSION1=`grep "^Stable tag" $GITPATH\readme.txt | awk -F' ' '{print $3}'`
 echo "readme version: $NEWVERSION1"
 NEWVERSION2=`grep "^Version" $GITPATH/$MAINFILE | awk -F' ' '{print $2}'`
 echo "$MAINFILE version: $NEWVERSION2"
