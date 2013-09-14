@@ -4,7 +4,7 @@ Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MZTZ5
 Tags: Site Verication, tool, VIP, webmaster, certication
 Requires at least: 3.6
 Tested up to: 3.6
-Stable tag: 1.0.0
+Stable tag: 1.0.2
 License: GPLv2 or later
 
 Site Verication Tool via file or head tag.
@@ -41,6 +41,7 @@ First version
 Thanks to Chris Ross for the code review
 
 == Upgrade Notice ==
+no upgrade instructions
 
 = 1.0.0 =
 none first version
