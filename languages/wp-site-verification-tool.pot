@@ -1,0 +1,78 @@
+# Copyright (C) 2013 WP Site Verication tool
+# This file is distributed under the same license as the WP Site Verication tool package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Site Verication tool 1.0.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-site-verification-tool\n"
+"POT-Creation-Date: 2013-09-16 15:20:59+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+
+#: form/wp-site-verification-tool.php:5
+msgid ""
+"This tool help you provide the site verication for any service that you need "
+"<br />\r\n"
+"\t\t\t\t\tvia a comment / meta in the head section or via a file\t<br /"
+">Examples:<br />\r\n"
+"\t\t\t\t\tGoogle webmaster tool needs a file called "
+"<strong>googleXXXXXXXXXXXXX.html</strong>  with no contents or <br />\r\n"
+"\t\t\t\t\t<strong>&lt;meta name=\"google-site-verification\" content="
+"\"XXXXXXXXXXXXXXXXXXXXXXXXXXXXX\" /></strong> in the head,<br />\r\n"
+"\t\t\t\t\tTrustwave wants a file called <strong>cert.html</strong> with the "
+"contents of\r\n"
+"\t\t\t\t\t<strong>\"Trustwave SSL Validation Page\"</strong> "
+msgstr ""
+
+#: form/wp-site-verification-tool.php:18
+msgid "Enable plugin: "
+msgstr ""
+
+#: form/wp-site-verification-tool.php:46
+msgid "Via file or in page head: "
+msgstr ""
+
+#: form/wp-site-verification-tool.php:71
+msgid "In page head: "
+msgstr ""
+
+#: form/wp-site-verification-tool.php:81
+msgid "Via a file: "
+msgstr ""
+
+#: form/wp-site-verification-tool.php:90
+msgid "File name: "
+msgstr ""
+
+#: form/wp-site-verification-tool.php:119
+msgid "Content: "
+msgstr ""
+
+#: lib/lib-ui.php:26
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WP Site Verication tool"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpres.org/wp-vite-verication-tool"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A sinple tool that deivlers entered file content for a given URL (filename)."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "paul Bearne"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://bearne.ca"
+msgstr ""

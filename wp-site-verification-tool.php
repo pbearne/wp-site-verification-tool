@@ -28,6 +28,10 @@ if ( $handle = opendir( $lib_dir ) ) {
 	closedir( $handle );
 }
 
+// -----------------------------------------------------
+// Register our transalations
+// -----------------------------------------------------
+load_plugin_textdomain('wp_site_verification_tool', false, basename( dirname( __FILE__ ) ) . '/languages');
 
 // -----------------------------------------------------
 // Register our options menu item and options page
