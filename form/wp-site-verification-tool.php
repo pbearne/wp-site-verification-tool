@@ -4,9 +4,11 @@
 	<div>
 		<?php _e( 'This tool help you provide the site verication for any service that you need <br />
 					via a comment / meta in the head section or via a file	<br />Examples:<br />
-					Google webmaster tool needs a file called <strong>googleXXXXXXXXXXXXX.html</strong>  with no contents or <br />
-					<strong>&lt;meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXXXXXXXX" /></strong> in the head,<br />
-					Trustwave wants a file called <strong>cert.html</strong> with the contents of
+					Google webmaster tool needs a file called <strong>googleXXXXXXXXXXXXX.html</strong>  with no contents 
+					<br /> or <br />
+					<strong>&lt;meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXXXXXXXX" /></strong> in the head,
+					<br />
+					Trustwave SSL wants a file called <strong>cert.html</strong> in the root with the contents of
 					<strong>"Trustwave SSL Validation Page"</strong> ','wp_site_verification_tool' ); ?>
 	</div>
 	<form action="options.php" method="post">

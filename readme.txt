@@ -4,22 +4,28 @@ Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MZTZ5
 Tags: Site Verication, tool, VIP, webmaster, certication
 Requires at least: 3.6
 Tested up to: 3.6
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 
 Site Verication Tool via file or head tag.
 
 == Description ==
 
-This is a sinple tool help you provide the site verication for any service that you need 
+This is a sinple tool that helps you provide the site verication code amd files for any service that you need 
 via a comment / meta in the head section or via a file URL.
 
+This is the genric site certication tool add the plug-in and turn it on as needed. 
+No more FTPing a file to the site root or added tags to the header.php in the template.
 
-Examples:
-Google webmaster tool needs a file called <strong>googleXXXXXXXXXXXXX.html</strong>  with no contents or 
+Some examples:
+Google webmaster tool needs a file called <strong>googleXXXXXXXXXXXXX.html</strong>  with no contents
+or 
 <strong>&lt;meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXXXXXXXX" /></strong> in the head,
-Trustwave wants a file called <strong>cert.html</strong> with the contents of 
-<strong>"Trustwave SSL Validation Page"</strong> ',"wp_site_verification_tool"
+
+Trustwave SSL wants a file called <strong>cert.html</strong> with the contents of 
+<strong>"Trustwave SSL Validation Page"</strong> 
+
+
 
 == Installation ==
 
@@ -35,6 +41,10 @@ Trustwave wants a file called <strong>cert.html</strong> with the contents of
 1. An example of a head meta tag
 
 == Change Log ==
+
+= 1.0.1 to 1.0.3 = 
+Added translation POT
+geting delpy script and assest to SVN from git
 
 = 1.0.0 =
 First version
