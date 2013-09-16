@@ -60,6 +60,7 @@ svn propset svn:ignore "deploy.sh
 README.md
 .git
 .db
+assets-wp-repo
 .gitignore" "$SVNPATH/trunk/"
 
 echo "Moving assets-wp-repo"
