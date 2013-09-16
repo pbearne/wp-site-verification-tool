@@ -3,7 +3,7 @@
 Plugin Name: WP Site Verication tool
 Plugin URI: http://wordpres.org/wp-vite-verication-tool
 Description: A sinple tool that deivlers entered file content for a given URL (filename).
-Version: 1.0.1
+Version: 1.0.2
 Author: paul Bearne
 Author URI: http://bearne.ca
 */

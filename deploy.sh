@@ -4,17 +4,19 @@
 
 # main config
 PLUGINSLUG="wp-site-verification-tool"
-CURRENTDIR=`pwd`
+CURRENTDIR=`pwd` #"//PROJECTS/wordpress_code/Plugins/wp-site-verification-tool"
+#`pwd`
+echo $CURRENTDIR
 MAINFILE="wp-site-verification-tool.php" # this should be the name of your main php file in the wordpress plugin
 
 # git config
 GITPATH="$CURRENTDIR" # this file should be in the base of your git repository
 
 # svn config
-SVNPATH="/tmp/$PLUGINSLUG" # path to a temp SVN repo. No trailing slash required and don't add trunk.
+SVNPATH="../tmp/$PLUGINSLUG" # path to a temp SVN repo. No trailing slash required and don't add trunk.
 SVNURL="http://plugins.svn.wordpress.org/wp-site-verification-tool/" # Remote SVN repo on wordpress.org, with no trailing slash
 SVNUSER="pbearne" # your svn username
-
+echo $SVNPATH
 
 # Let's begin...
 echo ".........................................."
@@ -57,6 +59,7 @@ echo "Ignoring github specific & deployment script"
 svn propset svn:ignore "deploy.sh
 README.md
 .git
+.db
 .gitignore" "$SVNPATH/trunk/"
 
 echo "Moving assets-wp-repo"
@@ -73,16 +76,21 @@ echo "committing to trunk"
 svn commit --username=$SVNUSER -m "$COMMITMSG"
 
 echo "Updating WP plugin repo assets & committing"
-cd $SVNPATH/assets/
+# cd $SVNPATH/assets/
+cd ../assets/
 svn commit --username=$SVNUSER -m "Updating wp-repo-assets"
 
 echo "Creating new SVN tag & committing it"
-cd $SVNPATH
+# cd $SVNPATH
+cd ../
 svn copy trunk/ tags/$NEWVERSION1/
-cd $SVNPATH/tags/$NEWVERSION1
+#cd $SVNPATH/tags/$NEWVERSION1
+cd tags/$NEWVERSION1
+cd /tags/$NEWVERSION1
 svn commit --username=$SVNUSER -m "Tagging version $NEWVERSION1"
 
 echo "Removing temporary directory $SVNPATH"
+cd ../../
 rm -fr $SVNPATH/
 
 echo "*** FIN ***"
