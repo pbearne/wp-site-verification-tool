@@ -3,8 +3,8 @@ Contributors: pbearne
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MZTZ5S8MGF75C&lc=CA&item_name=Wordpress%20Development%20%2f%20Paul%20Bearne&item_number=SiteVericationTool%20Plugin&currency_code=CAD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: Site Verication, tool, VIP, webmaster, certication
 Requires at least: 3.6
-Tested up to: 3.6
-Stable tag: 1.0.3
+Tested up to: 3.9
+Stable tag: 1.0.4
 License: GPLv2 or later
 
 Site Verication Tool via file or head tag.
@@ -42,9 +42,12 @@ Trustwave SSL wants a file called <strong>cert.html</strong> with the contents o
 
 == Change Log ==
 
+= 1.0.4 =
+Change the singleton to use self not static to support earlier PHP versions
+
 = 1.0.1 to 1.0.3 = 
 Added translation POT
-geting delpy script and assest to SVN from git
+getting deploy script and assest to SVN from git
 
 = 1.0.0 =
 First version
