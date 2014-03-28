@@ -19,10 +19,10 @@ class wp_site_verification_output{
     */
     public static function instance()
     {
-        if ( !isset( static::$instance ) ) {
-            static::$instance = new static;
+        if ( !isset( self::$instance ) ) {
+            self::$instance = new self();
         }
-        return static::$instance;
+        return self::$instance;
     }
 	/**
      * manage the redirect if turned on
