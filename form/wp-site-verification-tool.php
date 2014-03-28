@@ -50,7 +50,6 @@
 					$name 	= wp_site_verification_tool::option_name( $option );
 					$id		= wp_site_verification_tool::option_name( $option );
 					$value	= wp_site_verification_tool::get_option( $option );
-					var_dump( wp_site_verification_tool::get_option( $option ) );
 					if( ! $value )
 						$value = false;
 				?>
