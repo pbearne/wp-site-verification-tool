@@ -3,7 +3,7 @@
 Plugin Name: WP Site Verication tool
 Plugin URI: http://wordpres.org/wp-vite-verication-tool
 Description: A tool to enable verification of site ownership via file or meta tag.
-Version: 1.0.4
+Version: 1.0.5
 Author: paul Bearne
 Author URI: http://bearne.ca
 */

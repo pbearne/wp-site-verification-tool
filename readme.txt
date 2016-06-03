@@ -4,7 +4,7 @@ Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MZTZ5
 Tags: Site Verification, tool, VIP, webmaster, certification
 Requires at least: 3.6
 Tested up to: 4.5.2
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 
 A tool to enable verification of site ownership via file or meta tag.
@@ -44,6 +44,9 @@ Similarly, Trustwave SSL wants a file called <strong>cert.html</strong> with the
 4. An example of a head meta tag
 
 == Changelog ==
+
+= 1.0.5 =
+Readme update
 
 = 1.0.4 =
 Change the singleton to use self not static to support earlier PHP versions
